@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: store
+  datasource:
+    url: jdbc:mysql://localhost:3306/store?createDatabaseIfNotExist=true
+    username: root
+    password: mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+stripe:
+  api-url: https://api.stripe.com
+  enabled: true
+  timeout: 1000
+  supported-currencies: usd,eur,gbp
+
+notification:
+  enabled: true
+  email:
+    enabled: true
+
+email:
+  host: smtp.gmail.com
+  port: 587
+  username: username
